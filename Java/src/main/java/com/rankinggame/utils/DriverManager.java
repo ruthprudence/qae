@@ -28,48 +28,52 @@ public class DriverManager {
     }
 
     public static void initializeDriver() {
-        String browser = ConfigReader.getProperty("browser", "chrome").toLowerCase();
-        boolean headless = Boolean.parseBoolean(ConfigReader.getProperty("headless", "false"));
-        
+        String browser = ConfigReader.getProperty("browser").toLowerCase(); // Corrected line
+        boolean headless = Boolean.parseBoolean(ConfigReader.getProperty("headless")); // Corrected line
+
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                if (headless) chromeOptions.addArguments("--headless");
+                if (headless) chromeOptions.addArguments("--headless=new");
                 driver.set(new ChromeDriver(chromeOptions));
                 break;
-                
+
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 if (headless) firefoxOptions.addArguments("--headless");
                 driver.set(new FirefoxDriver(firefoxOptions));
                 break;
-                
+
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
                 if (headless) edgeOptions.addArguments("--headless");
                 driver.set(new EdgeDriver(edgeOptions));
                 break;
-                
+
             case "safari":
                 driver.set(new SafariDriver());
                 break;
-                
+
             default:
                 throw new IllegalArgumentException("Browser " + browser + " is not supported");
         }
-        
+
         // Configure default timeouts
-        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.get().manage().window().maximize();
+        WebDriver currentDriver = driver.get();
+        if (currentDriver != null) {
+            currentDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            currentDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+            currentDriver.manage().window().maximize();
+        }
     }
 
     public static void quitDriver() {
-        if (driver.get() != null) {
-            driver.get().quit();
+        WebDriver currentDriver = driver.get();
+        if (currentDriver != null) {
+            currentDriver.quit();
             driver.remove();
         }
     }

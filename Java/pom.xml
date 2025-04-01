@@ -12,28 +12,25 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.15.0</selenium.version>
-        <testng.version>7.8.0</testng.version>
-        <cucumber.version>7.14.0</cucumber.version>
-        <webdrivermanager.version>5.6.2</webdrivermanager.version>
+        <selenium.version>4.17.0</selenium.version>
+        <testng.version>7.9.0</testng.version>
+        <cucumber.version>7.15.0</cucumber.version>
+        <webdrivermanager.version>5.6.3</webdrivermanager.version>
     </properties>
 
     <dependencies>
-        <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
 
-        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -41,7 +38,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Cucumber -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -51,16 +47,8 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
         </dependency>
 
-        <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -72,14 +60,12 @@
             <version>1.4.11</version>
         </dependency>
 
-        <!-- Reporting -->
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>5.7.6</version>
         </dependency>
-        
-        <!-- Apache Commons -->
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
