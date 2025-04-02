@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Web_Testing_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Web Testing Suite</span>
+              <span class="suite-name border-failed">Web Testing Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">15 methods, 5 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Web_Testing_Suite" class="hide-methods failed suite-Web_Testing_Suite"> (hide)</a> <!-- hide-methods failed suite-Web_Testing_Suite -->
+                      <a href="#" panel-name="suite-Web_Testing_Suite" class="show-methods failed suite-Web_Testing_Suite"> (show)</a> <!-- show-methods failed suite-Web_Testing_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Web_Testing_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.SplashPageTest" class="method navigator-link" hash-for-method="testAudioElementsLoaded">testAudioElementsLoaded</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.SplashPageTest" class="method navigator-link" hash-for-method="testInputFieldEdgeCases">testInputFieldEdgeCases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testInputFieldsAndRankButton">testInputFieldsAndRankButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testRankButtonDisabledWithEmptyFields">testRankButtonDisabledWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testRemoveField">testRemoveField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Web_Testing_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +137,52 @@
                     <div class="method-list-content passed suite-Web_Testing_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.HomePageTest" class="method navigator-link" hash-for-method="testHomePageLoads">testHomePageLoads</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testAddField">testAddField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.HomePageTest" class="method navigator-link" hash-for-method="testInputFieldIsVisibleAndInteractable">testInputFieldIsVisibleAndInteractable</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testInitialInputFields">testInitialInputFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testInputFieldPlaceholders">testInputFieldPlaceholders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testMaximumFields">testMaximumFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testPageElements">testPageElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testRankButtonDisabledByDefault">testRankButtonDisabledByDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testRankButtonEnabledAfterInput">testRankButtonEnabledAfterInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.InputPageTest" class="method navigator-link" hash-for-method="testResetButton">testResetButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.SplashPageTest" class="method navigator-link" hash-for-method="testSplashPageLoads">testSplashPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Testing_Suite" title="com.rankinggame.testcases.SplashPageTest" class="method navigator-link" hash-for-method="testTopicInputAndSubmit">testTopicInputAndSubmit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Web_Testing_Suite -->
@@ -123,24 +197,182 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Web_Testing_Suite" class="panel Web_Testing_Suite">
-          <div class="suite-Web_Testing_Suite-class-passed">
+          <div class="suite-Web_Testing_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.rankinggame.testcases.HomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.rankinggame.testcases.SplashPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testHomePageLoads">
-                  </a> <!-- testHomePageLoads -->
-                  <span class="method-name">testHomePageLoads</span>
+                  <a name="testAudioElementsLoaded">
+                  </a> <!-- testAudioElementsLoaded -->
+                  <span class="method-name">testAudioElementsLoaded</span>
+                  <div class="stack-trace">java.lang.AssertionError: At least one audio element should be loaded expected [true] but found [false]
+	at com.rankinggame.testcases.SplashPageTest.testAudioElementsLoaded(SplashPageTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify audio elements are properly loaded)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testInputFieldIsVisibleAndInteractable">
-                  </a> <!-- testInputFieldIsVisibleAndInteractable -->
-                  <span class="method-name">testInputFieldIsVisibleAndInteractable</span>
+                  <a name="testInputFieldEdgeCases">
+                  </a> <!-- testInputFieldEdgeCases -->
+                  <span class="method-name">testInputFieldEdgeCases</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (c25e5acd19f02f839065d759ac8fc909)] -&gt; id: topicInput] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/xr/32pw_ml94qq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57068/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c25e5acd19f02f839065d759ac8fc909
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.rankinggame.pages.BasePage.waitForElementVisible(BasePage.java:44)
+	at com.rankinggame.pages.BasePage.sendKeys(BasePage.java:128)
+	at com.rankinggame.pages.SplashPage.enterTopic(SplashPage.java:60)
+	at com.rankinggame.testcases.SplashPageTest.testInputFieldEdgeCases(SplashPageTest.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test input field edge cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Testing_Suite-class-failed -->
+          <div class="suite-Web_Testing_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rankinggame.testcases.InputPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInputFieldsAndRankButton">
+                  </a> <!-- testInputFieldsAndRankButton -->
+                  <span class="method-name">testInputFieldsAndRankButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: URL should contain &apos;/matchup&apos; after clicking Rank button expected [true] but found [false]
+	at com.rankinggame.testcases.InputPageTest.testInputFieldsAndRankButton(InputPageTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRankButtonDisabledWithEmptyFields">
+                  </a> <!-- testRankButtonDisabledWithEmptyFields -->
+                  <span class="method-name">testRankButtonDisabledWithEmptyFields</span>
+                  <div class="stack-trace">java.lang.AssertionError: Rank button should be disabled when a field is empty expected [false] but found [true]
+	at com.rankinggame.testcases.InputPageTest.testRankButtonDisabledWithEmptyFields(InputPageTest.java:150)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveField">
+                  </a> <!-- testRemoveField -->
+                  <span class="method-name">testRemoveField</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected field count to decrease from 4 to 3 but got 4 expected [3] but found [4]
+	at com.rankinggame.testcases.InputPageTest.testRemoveField(InputPageTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Testing_Suite-class-failed -->
+          <div class="suite-Web_Testing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rankinggame.testcases.SplashPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSplashPageLoads">
+                  </a> <!-- testSplashPageLoads -->
+                  <span class="method-name">testSplashPageLoads</span>
+                  <em>
+(Verify splash page loads correctly with all elements)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTopicInputAndSubmit">
+                  </a> <!-- testTopicInputAndSubmit -->
+                  <span class="method-name">testTopicInputAndSubmit</span>
+                  <em>
+(Verify topic input and submit functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Testing_Suite-class-passed -->
+          <div class="suite-Web_Testing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rankinggame.testcases.InputPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddField">
+                  </a> <!-- testAddField -->
+                  <span class="method-name">testAddField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInitialInputFields">
+                  </a> <!-- testInitialInputFields -->
+                  <span class="method-name">testInitialInputFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInputFieldPlaceholders">
+                  </a> <!-- testInputFieldPlaceholders -->
+                  <span class="method-name">testInputFieldPlaceholders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMaximumFields">
+                  </a> <!-- testMaximumFields -->
+                  <span class="method-name">testMaximumFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageElements">
+                  </a> <!-- testPageElements -->
+                  <span class="method-name">testPageElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRankButtonDisabledByDefault">
+                  </a> <!-- testRankButtonDisabledByDefault -->
+                  <span class="method-name">testRankButtonDisabledByDefault</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRankButtonEnabledAfterInput">
+                  </a> <!-- testRankButtonEnabledAfterInput -->
+                  <span class="method-name">testRankButtonEnabledAfterInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testResetButton">
+                  </a> <!-- testResetButton -->
+                  <span class="method-name">testResetButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,16 +386,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Web Testing Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Web Testing Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Home Page Tests&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Splash Page Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.rankinggame.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.rankinggame.testcases.SplashPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Home Page Tests --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Firefox Tests&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;/test&gt; &lt;!-- Firefox Tests --&gt;
+  &lt;/test&gt; &lt;!-- Splash Page Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Input Page Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rankinggame.testcases.InputPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Input Page Tests --&gt;
 &lt;/suite&gt; &lt;!-- Web Testing Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,10 +409,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Home Page Tests (1 class)</span>
+                <span class="test-name">Splash Page Tests (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Firefox Tests (0 classes)</span>
+                <span class="test-name">Input Page Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +438,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInputFieldIsVisibleAndInteractable')
-data.setCell(0, 2, 'com.rankinggame.testcases.HomePageTest')
-data.setCell(0, 3, 965);
+data.setCell(0, 1, 'testAudioElementsLoaded')
+data.setCell(0, 2, 'com.rankinggame.testcases.SplashPageTest')
+data.setCell(0, 3, 51593);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testHomePageLoads')
-data.setCell(1, 2, 'com.rankinggame.testcases.HomePageTest')
-data.setCell(1, 3, 8);
+data.setCell(1, 1, 'testInputFieldEdgeCases')
+data.setCell(1, 2, 'com.rankinggame.testcases.SplashPageTest')
+data.setCell(1, 3, 10520);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMaximumFields')
+data.setCell(2, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(2, 3, 7464);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testRemoveField')
+data.setCell(3, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(3, 3, 2060);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRankButtonDisabledWithEmptyFields')
+data.setCell(4, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(4, 3, 1722);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testTopicInputAndSubmit')
+data.setCell(5, 2, 'com.rankinggame.testcases.SplashPageTest')
+data.setCell(5, 3, 1464);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInputFieldsAndRankButton')
+data.setCell(6, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(6, 3, 1177);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSplashPageLoads')
+data.setCell(7, 2, 'com.rankinggame.testcases.SplashPageTest')
+data.setCell(7, 3, 691);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testRankButtonEnabledAfterInput')
+data.setCell(8, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(8, 3, 651);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testAddField')
+data.setCell(9, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(9, 3, 562);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testResetButton')
+data.setCell(10, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(10, 3, 122);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInitialInputFields')
+data.setCell(11, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(11, 3, 96);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPageElements')
+data.setCell(12, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(12, 3, 59);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testInputFieldPlaceholders')
+data.setCell(13, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(13, 3, 39);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRankButtonDisabledByDefault')
+data.setCell(14, 2, 'com.rankinggame.testcases.InputPageTest')
+data.setCell(14, 3, 10);
 window.suiteTableData['Web_Testing_Suite']= { tableData: data, tableDiv: 'times-div-Web_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Web_Testing_Suite">
               </div> <!-- times-div-Web_Testing_Suite -->
             </div> <!-- times-div -->
@@ -243,30 +529,175 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.rankinggame.testcases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="chronological-class-name">com.rankinggame.testcases.SplashPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSplashPageLoads</span>
+                <span class="method-start">1960 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTopicInputAndSubmit</span>
+                <span class="method-start">2652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAudioElementsLoaded</span>
+                <span class="method-start">4116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInputFieldEdgeCases</span>
+                <span class="method-start">55716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66240 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rankinggame.testcases.InputPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">66367 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testHomePageLoads</span>
-                <span class="method-start">1817 ms</span>
+                <span class="method-name">testAddField</span>
+                <span class="method-start">68562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1826 ms</span>
+                <span class="method-start">69125 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1916 ms</span>
+                <span class="method-start">69215 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testInputFieldIsVisibleAndInteractable</span>
-                <span class="method-start">2965 ms</span>
+                <span class="method-name">testInitialInputFields</span>
+                <span class="method-start">71381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3930 ms</span>
+                <span class="method-start">71477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">71567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInputFieldPlaceholders</span>
+                <span class="method-start">73733 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">73773 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">73861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInputFieldsAndRankButton</span>
+                <span class="method-start">76002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">77273 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMaximumFields</span>
+                <span class="method-start">79455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">87027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPageElements</span>
+                <span class="method-start">89246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">89305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">89394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRankButtonDisabledByDefault</span>
+                <span class="method-start">91495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91505 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">91593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRankButtonDisabledWithEmptyFields</span>
+                <span class="method-start">93752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">95574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRankButtonEnabledAfterInput</span>
+                <span class="method-start">97703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98354 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">98448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveField</span>
+                <span class="method-start">100608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102669 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">102767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testResetButton</span>
+                <span class="method-start">104866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">104989 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

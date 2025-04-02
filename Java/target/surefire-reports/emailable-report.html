@@ -9,14 +9,52 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Web Testing Suite</th></tr>
-<tr><td><a href="#t0">Firefox Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Home Page Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,041</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">4,044</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Splash Page Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">66,359</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Input Page Tests</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">38,707</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">10</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">105,066</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Web Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Home Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.rankinggame.testcases.HomePageTest</td><td><a href="#m0">testHomePageLoads</a></td><td rowspan="1">1743548972248</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m1">testInputFieldIsVisibleAndInteractable</a></td><td rowspan="1">1743548973396</td><td rowspan="1">965</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Web Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Splash Page Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.rankinggame.testcases.SplashPageTest</td><td><a href="#m0">testAudioElementsLoaded</a></td><td rowspan="1">1743558377727</td><td rowspan="1">51593</td></tr><tr class="failedeven"><td><a href="#m1">testInputFieldEdgeCases</a></td><td rowspan="1">1743558429327</td><td rowspan="1">10520</td></tr><tr><th colspan="4">Splash Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.rankinggame.testcases.SplashPageTest</td><td><a href="#m2">testSplashPageLoads</a></td><td rowspan="1">1743558375571</td><td rowspan="1">691</td></tr><tr class="passedeven"><td><a href="#m3">testTopicInputAndSubmit</a></td><td rowspan="1">1743558376263</td><td rowspan="1">1464</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Input Page Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.rankinggame.testcases.InputPageTest</td><td><a href="#m4">testInputFieldsAndRankButton</a></td><td rowspan="1">1743558449613</td><td rowspan="1">1177</td></tr><tr class="failedeven"><td><a href="#m5">testRankButtonDisabledWithEmptyFields</a></td><td rowspan="1">1743558467363</td><td rowspan="1">1722</td></tr><tr class="failedeven"><td><a href="#m6">testRemoveField</a></td><td rowspan="1">1743558474219</td><td rowspan="1">2060</td></tr><tr><th colspan="4">Input Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.rankinggame.testcases.InputPageTest</td><td><a href="#m7">testAddField</a></td><td rowspan="1">1743558442173</td><td rowspan="1">562</td></tr><tr class="passedeven"><td><a href="#m8">testInitialInputFields</a></td><td rowspan="1">1743558444992</td><td rowspan="1">96</td></tr><tr class="passedeven"><td><a href="#m9">testInputFieldPlaceholders</a></td><td rowspan="1">1743558447344</td><td rowspan="1">39</td></tr><tr class="passedeven"><td><a href="#m10">testMaximumFields</a></td><td rowspan="1">1743558453066</td><td rowspan="1">7464</td></tr><tr class="passedeven"><td><a href="#m11">testPageElements</a></td><td rowspan="1">1743558462857</td><td rowspan="1">59</td></tr><tr class="passedeven"><td><a href="#m12">testRankButtonDisabledByDefault</a></td><td rowspan="1">1743558465106</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m13">testRankButtonEnabledAfterInput</a></td><td rowspan="1">1743558471314</td><td rowspan="1">651</td></tr><tr class="passedeven"><td><a href="#m14">testResetButton</a></td><td rowspan="1">1743558478477</td><td rowspan="1">122</td></tr></tbody>
 </table>
-<h2>Firefox Tests</h2><h2>Home Page Tests</h2><h3 id="m0">com.rankinggame.testcases.HomePageTest#testHomePageLoads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.rankinggame.testcases.HomePageTest#testInputFieldIsVisibleAndInteractable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Splash Page Tests</h2><h3 id="m0">com.rankinggame.testcases.SplashPageTest#testAudioElementsLoaded</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: At least one audio element should be loaded expected [true] but found [false]
+	at com.rankinggame.testcases.SplashPageTest.testAudioElementsLoaded(SplashPageTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.rankinggame.testcases.SplashPageTest#testInputFieldEdgeCases</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (c25e5acd19f02f839065d759ac8fc909)] -&gt; id: topicInput] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/xr/32pw_ml94qq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57068/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c25e5acd19f02f839065d759ac8fc909
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.rankinggame.pages.BasePage.waitForElementVisible(BasePage.java:44)
+	at com.rankinggame.pages.BasePage.sendKeys(BasePage.java:128)
+	at com.rankinggame.pages.SplashPage.enterTopic(SplashPage.java:60)
+	at com.rankinggame.testcases.SplashPageTest.testInputFieldEdgeCases(SplashPageTest.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.rankinggame.testcases.SplashPageTest#testSplashPageLoads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.rankinggame.testcases.SplashPageTest#testTopicInputAndSubmit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Input Page Tests</h2><h3 id="m4">com.rankinggame.testcases.InputPageTest#testInputFieldsAndRankButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: URL should contain &apos;/matchup&apos; after clicking Rank button expected [true] but found [false]
+	at com.rankinggame.testcases.InputPageTest.testInputFieldsAndRankButton(InputPageTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.rankinggame.testcases.InputPageTest#testRankButtonDisabledWithEmptyFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Rank button should be disabled when a field is empty expected [false] but found [true]
+	at com.rankinggame.testcases.InputPageTest.testRankButtonDisabledWithEmptyFields(InputPageTest.java:150)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.rankinggame.testcases.InputPageTest#testRemoveField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected field count to decrease from 4 to 3 but got 4 expected [3] but found [4]
+	at com.rankinggame.testcases.InputPageTest.testRemoveField(InputPageTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.rankinggame.testcases.InputPageTest#testAddField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.rankinggame.testcases.InputPageTest#testInitialInputFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.rankinggame.testcases.InputPageTest#testInputFieldPlaceholders</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.rankinggame.testcases.InputPageTest#testMaximumFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.rankinggame.testcases.InputPageTest#testPageElements</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.rankinggame.testcases.InputPageTest#testRankButtonDisabledByDefault</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.rankinggame.testcases.InputPageTest#testRankButtonEnabledAfterInput</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.rankinggame.testcases.InputPageTest#testResetButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,2 +1,3 @@
 com/rankinggame/runners/TestRunner.class
-com/rankinggame/testcases/HomePageTest.class
+com/rankinggame/testcases/SplashPageTest.class
+com/rankinggame/testcases/InputPageTest.class

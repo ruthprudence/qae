@@ -1,4 +1,5 @@
-com/rankinggame/pages/HomePage.class
+com/rankinggame/pages/InputPage.class
 com/rankinggame/pages/BasePage.class
 com/rankinggame/utils/ConfigReader.class
 com/rankinggame/utils/DriverManager.class
+com/rankinggame/pages/SplashPage.class

@@ -1,39 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="10" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-01T16:09:30 PDT" name="Web Testing Suite" finished-at="2025-04-01T16:09:34 PDT" duration-ms="4041">
+  <suite started-at="2025-04-01T18:46:13 PDT" name="Web Testing Suite" finished-at="2025-04-01T18:47:58 PDT" duration-ms="105080">
     <groups>
     </groups>
-    <test started-at="2025-04-01T16:09:30 PDT" name="Firefox Tests" finished-at="2025-04-01T16:09:30 PDT" duration-ms="3">
-    </test> <!-- Firefox Tests -->
-    <test started-at="2025-04-01T16:09:30 PDT" name="Home Page Tests" finished-at="2025-04-01T16:09:34 PDT" duration-ms="4041">
-      <class name="com.rankinggame.testcases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:30 PDT" name="setup" finished-at="2025-04-01T16:09:32 PDT" duration-ms="1817" status="PASS">
+    <test started-at="2025-04-01T18:46:13 PDT" name="Splash Page Tests" finished-at="2025-04-01T18:47:19 PDT" duration-ms="66359">
+      <class name="com.rankinggame.testcases.SplashPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:46:13 PDT" name="setup" finished-at="2025-04-01T18:46:15 PDT" duration-ms="1955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHomePageLoads()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:32 PDT" name="testHomePageLoads" finished-at="2025-04-01T16:09:32 PDT" duration-ms="8" status="PASS">
+        <test-method signature="testSplashPageLoads()[pri:1, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:46:15 PDT" name="testSplashPageLoads" description="Verify splash page loads correctly with all elements" finished-at="2025-04-01T18:46:16 PDT" duration-ms="691" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageLoads -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:32 PDT" name="tearDown" finished-at="2025-04-01T16:09:32 PDT" duration-ms="89" status="PASS">
+        </test-method> <!-- testSplashPageLoads -->
+        <test-method signature="testTopicInputAndSubmit()[pri:2, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:46:16 PDT" name="testTopicInputAndSubmit" description="Verify topic input and submit functionality" finished-at="2025-04-01T18:46:17 PDT" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopicInputAndSubmit -->
+        <test-method signature="testAudioElementsLoaded()[pri:4, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:46:17 PDT" name="testAudioElementsLoaded" description="Verify audio elements are properly loaded" finished-at="2025-04-01T18:47:09 PDT" duration-ms="51593" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[At least one audio element should be loaded expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: At least one audio element should be loaded expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.rankinggame.testcases.SplashPageTest.testAudioElementsLoaded(SplashPageTest.java:126)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAudioElementsLoaded -->
+        <test-method signature="testInputFieldEdgeCases()[pri:5, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:47:09 PDT" name="testInputFieldEdgeCases" description="Test input field edge cases" finished-at="2025-04-01T18:47:19 PDT" duration-ms="10520" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (c25e5acd19f02f839065d759ac8fc909)] -> id: topicInput] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/xr/32pw_ml94qq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57068/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c25e5acd19f02f839065d759ac8fc909]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (c25e5acd19f02f839065d759ac8fc909)] -> id: topicInput] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.2', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/xr/32pw_ml94qq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57068/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c25e5acd19f02f839065d759ac8fc909
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.rankinggame.pages.BasePage.waitForElementVisible(BasePage.java:44)
+at com.rankinggame.pages.BasePage.sendKeys(BasePage.java:128)
+at com.rankinggame.pages.SplashPage.enterTopic(SplashPage.java:60)
+at com.rankinggame.testcases.SplashPageTest.testInputFieldEdgeCases(SplashPageTest.java:136)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputFieldEdgeCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.SplashPageTest@7e990ed7]" started-at="2025-04-01T18:47:19 PDT" name="tearDown" finished-at="2025-04-01T18:47:19 PDT" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:32 PDT" name="setup" finished-at="2025-04-01T16:09:33 PDT" duration-ms="1049" status="PASS">
+      </class> <!-- com.rankinggame.testcases.SplashPageTest -->
+    </test> <!-- Splash Page Tests -->
+    <test started-at="2025-04-01T18:47:19 PDT" name="Input Page Tests" finished-at="2025-04-01T18:47:58 PDT" duration-ms="38707">
+      <class name="com.rankinggame.testcases.InputPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:19 PDT" name="setup" finished-at="2025-04-01T18:47:22 PDT" duration-ms="2194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testInputFieldIsVisibleAndInteractable()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:33 PDT" name="testInputFieldIsVisibleAndInteractable" finished-at="2025-04-01T16:09:34 PDT" duration-ms="965" status="PASS">
+        <test-method signature="testAddField()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:22 PDT" name="testAddField" finished-at="2025-04-01T18:47:22 PDT" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInputFieldIsVisibleAndInteractable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.HomePageTest@6f01b95f]" started-at="2025-04-01T16:09:34 PDT" name="tearDown" finished-at="2025-04-01T16:09:34 PDT" duration-ms="96" status="PASS">
+        </test-method> <!-- testAddField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:22 PDT" name="tearDown" finished-at="2025-04-01T18:47:22 PDT" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.rankinggame.testcases.HomePageTest -->
-    </test> <!-- Home Page Tests -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:22 PDT" name="setup" finished-at="2025-04-01T18:47:24 PDT" duration-ms="2166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInitialInputFields()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:24 PDT" name="testInitialInputFields" finished-at="2025-04-01T18:47:25 PDT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialInputFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:25 PDT" name="tearDown" finished-at="2025-04-01T18:47:25 PDT" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:25 PDT" name="setup" finished-at="2025-04-01T18:47:27 PDT" duration-ms="2166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInputFieldPlaceholders()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:27 PDT" name="testInputFieldPlaceholders" finished-at="2025-04-01T18:47:27 PDT" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputFieldPlaceholders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:27 PDT" name="tearDown" finished-at="2025-04-01T18:47:27 PDT" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:27 PDT" name="setup" finished-at="2025-04-01T18:47:29 PDT" duration-ms="2141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInputFieldsAndRankButton()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:29 PDT" name="testInputFieldsAndRankButton" finished-at="2025-04-01T18:47:30 PDT" duration-ms="1177" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL should contain '/matchup' after clicking Rank button expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL should contain '/matchup' after clicking Rank button expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.rankinggame.testcases.InputPageTest.testInputFieldsAndRankButton(InputPageTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputFieldsAndRankButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:30 PDT" name="tearDown" finished-at="2025-04-01T18:47:30 PDT" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:30 PDT" name="setup" finished-at="2025-04-01T18:47:33 PDT" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMaximumFields()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:33 PDT" name="testMaximumFields" finished-at="2025-04-01T18:47:40 PDT" duration-ms="7464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaximumFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:40 PDT" name="tearDown" finished-at="2025-04-01T18:47:40 PDT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:40 PDT" name="setup" finished-at="2025-04-01T18:47:42 PDT" duration-ms="2219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPageElements()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:42 PDT" name="testPageElements" finished-at="2025-04-01T18:47:42 PDT" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:42 PDT" name="tearDown" finished-at="2025-04-01T18:47:43 PDT" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:43 PDT" name="setup" finished-at="2025-04-01T18:47:45 PDT" duration-ms="2101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRankButtonDisabledByDefault()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:45 PDT" name="testRankButtonDisabledByDefault" finished-at="2025-04-01T18:47:45 PDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRankButtonDisabledByDefault -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:45 PDT" name="tearDown" finished-at="2025-04-01T18:47:45 PDT" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:45 PDT" name="setup" finished-at="2025-04-01T18:47:47 PDT" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRankButtonDisabledWithEmptyFields()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:47 PDT" name="testRankButtonDisabledWithEmptyFields" finished-at="2025-04-01T18:47:49 PDT" duration-ms="1722" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Rank button should be disabled when a field is empty expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Rank button should be disabled when a field is empty expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.rankinggame.testcases.InputPageTest.testRankButtonDisabledWithEmptyFields(InputPageTest.java:150)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRankButtonDisabledWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:49 PDT" name="tearDown" finished-at="2025-04-01T18:47:49 PDT" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:49 PDT" name="setup" finished-at="2025-04-01T18:47:51 PDT" duration-ms="2129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRankButtonEnabledAfterInput()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:51 PDT" name="testRankButtonEnabledAfterInput" finished-at="2025-04-01T18:47:51 PDT" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRankButtonEnabledAfterInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:51 PDT" name="tearDown" finished-at="2025-04-01T18:47:52 PDT" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:52 PDT" name="setup" finished-at="2025-04-01T18:47:54 PDT" duration-ms="2160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRemoveField()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:54 PDT" name="testRemoveField" finished-at="2025-04-01T18:47:56 PDT" duration-ms="2060" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected field count to decrease from 4 to 3 but got 4 expected [3] but found [4]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected field count to decrease from 4 to 3 but got 4 expected [3] but found [4]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at com.rankinggame.testcases.InputPageTest.testRemoveField(InputPageTest.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:56 PDT" name="tearDown" finished-at="2025-04-01T18:47:56 PDT" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:56 PDT" name="setup" finished-at="2025-04-01T18:47:58 PDT" duration-ms="2099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testResetButton()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:58 PDT" name="testResetButton" finished-at="2025-04-01T18:47:58 PDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rankinggame.testcases.InputPageTest@465232e9]" started-at="2025-04-01T18:47:58 PDT" name="tearDown" finished-at="2025-04-01T18:47:58 PDT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rankinggame.testcases.InputPageTest -->
+    </test> <!-- Input Page Tests -->
   </suite> <!-- Web Testing Suite -->
 </testng-results>
